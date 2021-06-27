@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PjN-yU-xcp">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NutritionAnalysis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition Analysis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxf-EO-KBU">
+                                <rect key="frame" x="75.5" y="20" width="224" height="32.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gy9-E7-XOj">
+                                <rect key="frame" x="20" y="70" width="335" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Kuq-pT-ncH"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter an ingredient list list for what you are cooking, like &quot;">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="1 cup rice, 10 oz chickpeas">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.14875856164383561" blue="0.21377354452054795" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">", etc.
+Enter each ingredient on a new line.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xZ6-C3-typ">
+                                <rect key="frame" x="20" y="178" width="335" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="DFd-ZI-zJ5"/>
+                                    <constraint firstAttribute="height" constant="130" id="OAr-jS-6R9"/>
+                                    <constraint firstAttribute="height" constant="300" id="ltC-xb-uw5"/>
+                                </constraints>
+                                <inset key="scrollIndicatorInsets" minX="50" minY="20" maxX="50" maxY="20"/>
+                                <string key="text">1 cup rice
+10 oz chickpeas</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DFd-ZI-zJ5"/>
+                                        <exclude reference="OAr-jS-6R9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DFd-ZI-zJ5"/>
+                                        <exclude reference="ltC-xb-uw5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="OAr-jS-6R9"/>
+                                        <exclude reference="ltC-xb-uw5"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y42-lU-QOE">
+                                <rect key="frame" x="137.5" y="518" width="100" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3eZ-6G-qLa"/>
+                                    <constraint firstAttribute="height" constant="40" id="DsJ-58-wlh"/>
+                                    <constraint firstAttribute="width" constant="100" id="FaI-3Y-SmP"/>
+                                    <constraint firstAttribute="height" constant="40" id="SFs-DU-a7d"/>
+                                    <constraint firstAttribute="width" constant="100" id="VuG-JD-Vg5"/>
+                                    <constraint firstAttribute="width" constant="100" id="vmQ-f2-HTk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Analyze">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.14875856160000001" blue="0.2137735445" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3eZ-6G-qLa"/>
+                                        <exclude reference="DsJ-58-wlh"/>
+                                        <exclude reference="VuG-JD-Vg5"/>
+                                        <exclude reference="vmQ-f2-HTk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3eZ-6G-qLa"/>
+                                        <exclude reference="FaI-3Y-SmP"/>
+                                        <exclude reference="SFs-DU-a7d"/>
+                                        <include reference="VuG-JD-Vg5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="DsJ-58-wlh"/>
+                                        <exclude reference="FaI-3Y-SmP"/>
+                                        <exclude reference="SFs-DU-a7d"/>
+                                        <include reference="vmQ-f2-HTk"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y42-lU-QOE" firstAttribute="top" secondItem="xZ6-C3-typ" secondAttribute="bottom" constant="40" id="0lJ-p2-7rl"/>
+                            <constraint firstItem="xZ6-C3-typ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Bf-kq-TeA"/>
+                            <constraint firstItem="xZ6-C3-typ" firstAttribute="top" secondItem="gy9-E7-XOj" secondAttribute="bottom" constant="8" id="7Bc-Y6-17N"/>
+                            <constraint firstItem="y42-lU-QOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8UR-PY-i5P"/>
+                            <constraint firstItem="xZ6-C3-typ" firstAttribute="top" secondItem="gy9-E7-XOj" secondAttribute="bottom" constant="8" id="9WK-mK-HK8"/>
+                            <constraint firstItem="Gxf-EO-KBU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ABi-yh-LPk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xZ6-C3-typ" secondAttribute="trailing" constant="20" id="Atv-0L-N7d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gy9-E7-XOj" secondAttribute="trailing" constant="20" id="B30-db-gCv"/>
+                            <constraint firstItem="gy9-E7-XOj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GNY-RP-yZq"/>
+                            <constraint firstItem="gy9-E7-XOj" firstAttribute="top" secondItem="Gxf-EO-KBU" secondAttribute="bottom" constant="17.5" id="Gjo-gX-Iu9"/>
+                            <constraint firstItem="Gxf-EO-KBU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Jut-XR-vtY"/>
+                            <constraint firstItem="xZ6-C3-typ" firstAttribute="top" secondItem="gy9-E7-XOj" secondAttribute="bottom" constant="8" id="TFW-uS-gqD"/>
+                            <constraint firstItem="xZ6-C3-typ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XWm-yR-zcD"/>
+                            <constraint firstItem="xZ6-C3-typ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dUW-Nj-u3C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xZ6-C3-typ" secondAttribute="trailing" constant="20" id="epz-am-P5g"/>
+                            <constraint firstItem="y42-lU-QOE" firstAttribute="top" secondItem="xZ6-C3-typ" secondAttribute="bottom" constant="20" id="hpn-1n-B9M"/>
+                            <constraint firstItem="y42-lU-QOE" firstAttribute="top" secondItem="xZ6-C3-typ" secondAttribute="bottom" constant="20" id="jlB-lq-OhQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xZ6-C3-typ" secondAttribute="trailing" constant="20" id="jt9-Vu-9I0"/>
+                            <constraint firstItem="y42-lU-QOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pIj-49-WX5"/>
+                            <constraint firstItem="y42-lU-QOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vQl-6S-tXm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="epz-am-P5g"/>
+                                <exclude reference="jt9-Vu-9I0"/>
+                                <exclude reference="6Bf-kq-TeA"/>
+                                <exclude reference="9WK-mK-HK8"/>
+                                <exclude reference="TFW-uS-gqD"/>
+                                <exclude reference="XWm-yR-zcD"/>
+                                <exclude reference="8UR-PY-i5P"/>
+                                <exclude reference="hpn-1n-B9M"/>
+                                <exclude reference="jlB-lq-OhQ"/>
+                                <exclude reference="vQl-6S-tXm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Atv-0L-N7d"/>
+                                <include reference="jt9-Vu-9I0"/>
+                                <include reference="6Bf-kq-TeA"/>
+                                <exclude reference="7Bc-Y6-17N"/>
+                                <include reference="9WK-mK-HK8"/>
+                                <exclude reference="dUW-Nj-u3C"/>
+                                <exclude reference="0lJ-p2-7rl"/>
+                                <include reference="hpn-1n-B9M"/>
+                                <exclude reference="pIj-49-WX5"/>
+                                <include reference="vQl-6S-tXm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="Atv-0L-N7d"/>
+                                <include reference="epz-am-P5g"/>
+                                <exclude reference="7Bc-Y6-17N"/>
+                                <include reference="TFW-uS-gqD"/>
+                                <include reference="XWm-yR-zcD"/>
+                                <exclude reference="dUW-Nj-u3C"/>
+                                <exclude reference="0lJ-p2-7rl"/>
+                                <include reference="8UR-PY-i5P"/>
+                                <include reference="jlB-lq-OhQ"/>
+                                <exclude reference="pIj-49-WX5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="3aX-vh-4l7"/>
+                    <connections>
+                        <outlet property="anlizerBtn" destination="y42-lU-QOE" id="WGg-Cv-xN0"/>
+                        <outlet property="nutritionTf" destination="xZ6-C3-typ" id="PDa-IM-b4Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872.79999999999995" y="105.69715142428787"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nrO-RT-E0c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="PjN-yU-xcp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GbL-Ye-VEc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lro-v1-nHS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7d-IZ-e7C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66.400000000000006" y="105.69715142428787"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

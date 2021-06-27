@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IgnrHeader" customModule="NutritionAnalysis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ner-ra-EJk">
+                    <rect key="frame" x="0.0" y="0.0" width="431" height="60"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="G4S-Eo-lyb">
+                            <rect key="frame" x="0.0" y="0.0" width="431" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoD-f0-Wgm">
+                                    <rect key="frame" x="0.0" y="0.0" width="86" height="60"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kX-OO-9rE">
+                                    <rect key="frame" x="86" y="0.0" width="86.5" height="60"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpk-LJ-D4E">
+                                    <rect key="frame" x="172.5" y="0.0" width="86" height="60"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7j-YI-z9C">
+                                    <rect key="frame" x="258.5" y="0.0" width="86.5" height="60"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xma-Sn-KNJ">
+                                    <rect key="frame" x="345" y="0.0" width="86" height="60"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-J3-AEa">
+                            <rect key="frame" x="0.0" y="58" width="431" height="2"/>
+                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="LKU-iG-CXo"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" systemColor="systemGray2Color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="G4S-Eo-lyb" firstAttribute="leading" secondItem="ner-ra-EJk" secondAttribute="leading" id="1r4-pr-bMz"/>
+                        <constraint firstItem="jHl-J3-AEa" firstAttribute="leading" secondItem="ner-ra-EJk" secondAttribute="leading" id="9fh-5l-biD"/>
+                        <constraint firstAttribute="bottom" secondItem="G4S-Eo-lyb" secondAttribute="bottom" id="Bx0-nR-AwD"/>
+                        <constraint firstAttribute="height" constant="60" id="KW5-fg-FCg"/>
+                        <constraint firstAttribute="bottom" secondItem="jHl-J3-AEa" secondAttribute="bottom" id="e01-jg-Ee7"/>
+                        <constraint firstAttribute="trailing" secondItem="G4S-Eo-lyb" secondAttribute="trailing" id="ehj-i5-1em"/>
+                        <constraint firstItem="G4S-Eo-lyb" firstAttribute="top" secondItem="ner-ra-EJk" secondAttribute="top" id="jP5-9u-0H6"/>
+                        <constraint firstAttribute="trailing" secondItem="jHl-J3-AEa" secondAttribute="trailing" id="uYm-gu-dvf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" systemColor="systemGray2Color"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ner-ra-EJk" secondAttribute="bottom" id="2ZY-Wo-MWi"/>
+                <constraint firstItem="ner-ra-EJk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="56q-Gl-20F"/>
+                <constraint firstItem="ner-ra-EJk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OH2-sC-Nnc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ner-ra-EJk" secondAttribute="trailing" id="zo5-12-XkT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-0.7246376811594204" y="82.366071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
